@@ -1,0 +1,31 @@
+{
+  "name": "findashboard",
+  "version": "1.0.0",
+  "description": "Demo client for RPS backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jizumer/rock-paper-scissors-arena-client.git"
+  },
+  "author": "@jizumer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jizumer/rock-paper-scissors-arena-client/issues"
+  },
+  "homepage": "https://github.com/jizumer/rock-paper-scissors-arena-client#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "express": "^4.17.1",
+    "express-edge": "^2.0.1",
+    "mongoose": "^5.8.3",
+    "node-cron": "^2.0.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

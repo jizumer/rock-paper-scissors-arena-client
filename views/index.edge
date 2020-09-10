@@ -1,0 +1,46 @@
+@layout('layouts.app')
+
+@section('content')
+
+<!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/rock-paper-scissors-vector-22.png')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h1>Rock, paper, scissors!</h1>
+                        <span class="subheader">Current player</span>
+                        <div id="current-player"class="subheader"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="post-preview">
+
+                    <h2 id="round-counter" class="post-title">
+                        Rounds played so far
+                    </h2>
+                    
+                    <div id="rounds"></div>                   
+                    @if(lastUpdate)
+                    <p class="post-meta">Last update
+                        {{lastUpdate}}
+                    </p>
+                    @endif
+                </div>
+                <hr>
+                <button class="btn btn-primary" onclick="playNewRound()">Play</button>
+                <button class="btn btn-primary" onclick="restartGame()">Restart game</button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    @endsection
